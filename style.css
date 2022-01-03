@@ -1,0 +1,147 @@
+* 
+{
+    font-family: sans-serif;
+}
+
+body{
+    overflow: auto;
+}
+
+h2
+{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.asterisco 
+{
+    color: white;
+}
+
+.content-principal
+{
+    text-align: center;
+    height: 72vh;
+    width: 25%; 
+    margin: auto;
+    background-color: rgb(31, 5, 73);
+    border-radius: 10px;
+    position: relative; 
+    margin-top: 40px;   
+}
+
+
+.space-writer
+{
+    width: 50%;
+    height: 8vh;
+    margin-left: 25%;
+    margin-top: 30px;
+    background-color: rgb(95, 67, 141);
+    font-size: 60px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.keyboard
+{
+    width: 100%;
+    height: 55vh;
+    margin: auto;
+    margin-top: 100px;
+    position: absolute;
+}
+
+.btn-number
+{
+    background-color: rgb(95, 67, 141);
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid rgb(95, 67, 141);
+    color: white;
+    font-size: 30px;
+}
+
+.keyboard button:hover
+{
+    background-color: rgb(148, 130, 179);
+    transition: 0.4s;
+}
+
+/*mobile vertical*/
+@media only screen and (max-width: 900px)
+{
+    .content-principal
+    {
+        width: 80%;
+        height: 75vh;
+    }
+    .btn-number
+    {
+        width: 9vh;
+        height: 9vh;
+    }
+    .keyboard
+    {
+        padding-top: 40px;
+    }   
+    body
+    {
+        height: 120vh;
+        overflow: auto;
+    }
+}
+/*mobile horizontal*/
+@media only screen and (max-width: 900px) and (orientation: landscape)
+{
+    .content-principal
+    {
+        width: 60%;
+        height: 120vh;
+    }
+    .btn-number
+    {
+        width: 16vh;
+        height: 16vh;
+    }
+    .keyboard
+    {
+        padding-top: 10px;
+    }
+    body
+    {
+        height: 170vh;
+    }
+}
+/*tablet vertical*/
+@media only screen and (min-width: 700px) and (max-width: 1250px)
+{
+    body
+    {
+        padding-right: 80px;
+    }
+    .content-principal
+    {
+        height: 60vh;
+        width: 70%;
+    }
+}
+/*tablet horizontal*/
+@media only screen and (min-width: 700px) and (max-width: 1250px) and (orientation: landscape)
+{
+    body
+    {
+        padding-right: 370px;
+        height: 104vh;
+    }
+    .content-principal
+    {
+        height: 65vh;
+        width: 70%;
+    }
+}
